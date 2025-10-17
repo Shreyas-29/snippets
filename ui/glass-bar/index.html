@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="action-bar">
+        <button>
+            <i class="fas fa-home"></i>
+        </button>
+        <button>
+            <i class="fas fa-search"></i>
+        </button>
+        <button class="selected">
+            <i class="fas fa-heart"></i>
+        </button>
+        <button>
+            <i class="fas fa-bell"></i>
+        </button>
+        <button>
+            <i class="fas fa-cog"></i>
+        </button>
+        <button>
+            <i class="fas fa-user"></i>
+        </button>
+    </div>
+
+    <div class="anchored-pointer">
+    </div>
+
+    <svg width="0" height="0">
+        <filter id="filter" color-interpolation-filters="linearRGB" filterUnits="objectBoundingBox"
+            primitiveUnits="userSpaceOnUse">
+            <feDisplacementMap in="SourceGraphic" in2="SourceGraphic" scale="5" xChannelSelector="A"
+                yChannelSelector="A" x="5" y="-5" width="100%" height="100%" result="displacementMap" />
+        </filter>
+    </svg>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
